@@ -78,7 +78,7 @@ document.addEventListener('keydown', event => {
 });
 
 const photos = [
-  { src: 'imagens/WhatsApp Image 2026-11-09 at 17.04.26 (2).jpeg', alt: 'Gabriel e Beatriz juntinhos à mesa, sorrindo', caption: 'A minha foto favorita de nós dois. ♡' },
+  { src: 'imagens/WhatsApp Image 2026-11-09 at 17.04.26 (2).jpeg', alt: 'Gabriel e Beatriz juntinhos à mesa, sorrindo', caption: 'A minha foto favorita de nós dois. ♡︎' },
   { src: 'imagens/WhatsApp Image 2026-11-09 at 17.04.21.jpeg', alt: 'Gabriel e Beatriz se beijando em uma selfie no espelho', caption: 'Um beijo e mais uma lembrança nossa.' },
   { src: 'imagens/WhatsApp Image 2026-11-09 at 17.04.21 (1).jpeg', alt: 'Beatriz beijando o rosto de Gabriel em uma selfie com flores', caption: 'Flores, carinho e nós dois.' },
   { src: 'imagens/WhatsApp Image 2026-11-09 at 17.04.22.jpeg', alt: 'Gabriel e Beatriz sorrindo em uma selfie com flores', caption: 'O sorriso que fica na memória.' },
@@ -224,5 +224,5 @@ vinylToggle.addEventListener('click', () => {
   const spinning = vinylToggle.classList.toggle('is-spinning');
   vinylToggle.setAttribute('aria-pressed', String(spinning));
   vinylToggle.setAttribute('aria-label', spinning ? 'Pausar o disco de vinil' : 'Girar o disco de vinil');
-  vinylHint.textContent = spinning ? 'Toque no disco para pausar ♡' : 'Toque no disco para girar ♡';
+  vinylHint.textContent = spinning ? 'Toque no disco para pausar ♡︎' : 'Toque no disco para girar ♡︎';
 });

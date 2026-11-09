@@ -86,6 +86,8 @@ h1,h2,h3,p{margin-top:0}.hero h1{font:500 clamp(56px,7.8vw,118px)/1.13 var(--ser
 @media(max-width:640px){.music-copy h2{font-size:clamp(42px,9.5vw,58px)}.music-copy>p:not(.section-kicker){font-size:15px}.vinyl-button{width:min(82vw,340px)}.record-stage:before{width:min(76vw,330px)}}
 @media(prefers-reduced-motion:reduce){.vinyl-button.is-spinning .vinyl-disc{animation:none}}
 
+.green-heart{color:#0b6644;font-family:Georgia,serif;font-size:1.1em}
+
 /* Álbum ampliado e lembrança do pedido. */
 .album-thumbs{max-height:510px;overflow-y:auto;overscroll-behavior:contain;padding:3px 7px 3px 3px;align-content:start;scrollbar-color:#c58b98 #efe1dc;scrollbar-width:thin}
 .album-thumb{min-width:0}
