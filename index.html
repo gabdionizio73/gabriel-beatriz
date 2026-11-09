@@ -1,0 +1,328 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#f8f0e9" />
+  <meta name="description"
+    content="A história de Gabriel e Beatriz, contada com carinho, do primeiro encontro ao nosso recomeço." />
+  <title>Gabriel & Beatriz ♡ Nossa história</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <div class="page-progress" aria-hidden="true"><span id="page-progress-fill"></span></div>
+
+  <header class="site-header">
+    <a class="brand" href="#inicio" aria-label="Gabriel e Beatriz, voltar ao começo">G &amp; B<span>♡</span></a>
+    <nav aria-label="Navegação principal">
+      <a href="#historia">Nossa história</a>
+      <a href="#album">Nossas fotos</a>
+      <a href="#motivos">O que eu amo</a>
+      <a class="nav-letter" href="#carta">Uma carta <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio" aria-labelledby="hero-title">
+      <div class="hero-spark hero-spark-one" aria-hidden="true">✳</div>
+      <div class="hero-spark hero-spark-two" aria-hidden="true">✧</div>
+      <div class="hero-inner">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="eyebrow-line"></span> Gabriel &amp; Beatriz <span
+              class="eyebrow-line"></span></div>
+          <h1 id="hero-title">Beatriz, a vida é mais bonita <em>com você</em><span class="title-dot">.</span></h1>
+          <p>Uma página para guardar o que vivemos, lembrar como nos reencontramos e celebrar a história que seguimos
+            escrevendo.</p>
+          <a class="button button-primary" href="#historia">Começar nossa história <span aria-hidden="true">↓</span></a>
+        </div>
+        <div class="hero-photos" aria-label="Fotos de Gabriel e Beatriz">
+          <figure class="hero-photo hero-photo-main"><img src="imagens/WhatsApp Image 2026-11-09 at 17.04.26 (2).jpeg"
+              alt="Gabriel e Beatriz juntinhos à mesa, sorrindo" fetchpriority="high" />
+            <figcaption>a minha foto favorita de nós ♡</figcaption>
+          </figure>
+          <figure class="hero-photo hero-photo-small"><img src="imagens/WhatsApp Image 2026-11-09 at 16.25.11 (1).jpeg"
+              alt="Gabriel e Beatriz sorrindo juntos" />
+            <figcaption>o meu lugar favorito
+            </figcaption>
+          </figure>
+          <span class="hero-doodle" aria-hidden="true">♡</span>
+        </div>
+      </div>
+      <div class="hero-bottom" aria-hidden="true"><span>desde novembro de 2022</span><span>✦</span><span>uma história
+          que continua</span></div>
+    </section>
+
+    <section class="intro section-pad" aria-labelledby="intro-title">
+      <div class="intro-symbol reveal" aria-hidden="true">♡</div>
+      <p class="section-kicker reveal">Antes de tudo</p>
+      <h2 id="intro-title" class="reveal">Nem toda história segue<br />em <em>linha reta.</em></h2>
+      <p class="intro-copy reveal">A nossa teve encontros, erros, acertos, um tempo de distância e um recomeço. Em meio
+        a tudo isso, houve carinho. Hoje, quero cuidar do que estamos construindo juntos.</p>
+      <div class="small-flourish reveal" aria-hidden="true">✦ &nbsp; ✦ &nbsp; ✦</div>
+    </section>
+
+    <section class="album-section section-pad" id="album" aria-labelledby="album-title">
+      <div class="section-heading reveal">
+        <p class="section-kicker">Um pedacinho de nós</p>
+        <h2 id="album-title">Nossas fotos, <em>nossas memórias</em></h2>
+        <p>Alguns retratos que eu quero guardar por perto. Toque nas fotos para passear pelo nosso álbum.</p>
+      </div>
+      <div class="album-layout reveal">
+        <div class="album-feature">
+          <button class="album-open" id="album-open" type="button" aria-label="Ampliar foto atual">
+            <img id="album-image" src="imagens/WhatsApp Image 2026-11-09 at 17.04.26 (2).jpeg"
+              alt="Gabriel e Beatriz juntinhos à mesa, sorrindo" />
+            <span class="album-zoom" aria-hidden="true">↗</span>
+          </button>
+          <div class="album-controls">
+            <div><span class="album-counter" id="album-counter" aria-live="polite">01 / 24</span>
+              <p id="album-caption">A minha foto favorita de nós dois. ♡</p>
+            </div>
+            <div class="album-arrows"><button id="album-prev" type="button" aria-label="Foto anterior">←</button><button
+                id="album-next" type="button" aria-label="Próxima foto">→</button></div>
+          </div>
+        </div>
+        <div class="album-side">
+          <p class="album-handwriting">a nossa vida em pequenos instantes <span>♡</span></p>
+          <div class="album-thumbs" id="album-thumbs" aria-label="Escolher foto do álbum"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="timeline-section section-pad" id="historia" aria-labelledby="timeline-title">
+      <div class="section-heading reveal">
+        <p class="section-kicker">Os nossos capítulos</p>
+        <h2 id="timeline-title">Os caminhos que nos trouxeram <em>até aqui</em></h2>
+        <p>Do primeiro encontro ao nosso recomeço, cada capítulo faz parte de nós.</p>
+      </div>
+      <div class="timeline" id="timeline">
+        <div class="timeline-track" aria-hidden="true">
+          <div class="timeline-track-fill" id="timeline-fill"></div>
+        </div>
+        <article class="timeline-item reveal">
+          <div class="timeline-marker" aria-hidden="true">01</div>
+          <div class="timeline-card">
+            <span class="chapter">Novembro de 2022 · o começo</span>
+            <span class="timeline-icon" aria-hidden="true">✳</span>
+            <h3>Quando a gente<br />se conheceu</h3>
+            <p>Tudo começou de maneira natural. Aos poucos, fomos nos aproximando, sem imaginar todos os capítulos que viriam. Começamos com um “oi” no Maanaim de Carapina, uma caminhada juntos até o ônibus e, depois, sentamos perto um do outro...</p>
+            <p>Eu me lembro de ter falado com o Júnior: “Ela é bonita, será que dá? Kkkkk.” Ele riu comigo, acredita? E, logo depois, descobri que você era minha vizinha. Como assim? A mulher que eu achei linda e em quem fui dar ideia era minha vizinha?</p>
+            <p>E quem diria? Meu pai pediu para gravar o seu batismo justamente quando o seu pai não gravou. Acho que foi combinado, hein? Kkkkk. Depois vieram as idas e vindas à igreja juntos, as longas conversas depois do IFES e uma terapia para nós dois!</p>
+          </div>
+        </article>
+        <article class="timeline-item reveal">
+          <div class="timeline-marker" aria-hidden="true">02</div>
+          <div class="timeline-card">
+            <span class="chapter">28 de janeiro de 2023 · o primeiro beijo</span>
+            <span class="timeline-icon" aria-hidden="true">☼</span>
+            <h3>O beijo que virou<br />uma lembrança nossa</h3>
+            <p>Depois de tudo acontecer no seu tempo, veio o nosso primeiro beijo oficial. Um daqueles dias que merecem ficar guardados. Antes dele, houve um beijo do nada na casa dos meus avós, em Minas Gerais: viramos o rosto ao mesmo tempo e, sem querer, nos beijamos. Kkkkk.</p>
+            <p>Parece coisa de filme. Ou será que a nossa história ainda vira um? Kkkkk. Mas a data aqui anotada é a do primeiro beijo oficial, beijão mesmo. Quis contar o resto porque também faz parte da nossa história.</p>
+          </div>
+        </article>
+        <article class="timeline-item reveal">
+          <div class="timeline-marker" aria-hidden="true">03</div>
+          <div class="timeline-card">
+            <span class="chapter">04 de maio de 2024 · nosso namoro</span>
+            <span class="timeline-icon" aria-hidden="true">♡</span>
+            <h3>Pastor, conversas<br />e um sim para nós</h3>
+            <p>Começamos a namorar oficialmente. Demos nome ao que já vínhamos vivendo há muito tempo, embora tivéssemos passado por muitos tropeços até chegar ali. Mas conseguimos começar a mais bela história de amor.</p>
+          </div>
+        </article>
+        <article class="timeline-item reveal">
+          <div class="timeline-marker" aria-hidden="true">04</div>
+          <div class="timeline-card">
+            <span class="chapter">Abril de 2025 · um tempo separados</span>
+            <span class="timeline-icon" aria-hidden="true">☾</span>
+            <h3>Quando seguimos<br />por caminhos diferentes</h3>
+            <p>Passamos um tempo afastados. Deixamos um ao outro seguir, como se já não nos conhecêssemos. Essa parte também faz parte da nossa história, pois nos mostrou ainda mais a intensidade do nosso amor. Nem mesmo em outros lugares encontraríamos um amor como o nosso.</p>
+          </div>
+        </article>
+        <article class="timeline-item reveal">
+          <div class="timeline-marker" aria-hidden="true">05</div>
+          <div class="timeline-card">
+            <span class="chapter">Junho de 2026 · o reencontro</span>
+            <span class="timeline-icon" aria-hidden="true">✧</span>
+            <h3>A conversa que<br />reabriu a nossa história</h3>
+            <p>Voltamos a nos falar, inicialmente com um pedido de desculpas. Aos poucos, tudo foi acontecendo do jeito que você pedia a Deus. Com carinho, fomos encontrando outra vez um caminho para estar perto.</p>
+            <p>Saídas do nada, conversas do nada, lugares juntos do nada e um novo beijo sem planejar nada. Mas, opa: a gente se beijou logo no primeiro encontro! Muito sapecas, hein? Kkkkk.</p>
+          </div>
+        </article>
+        <article class="timeline-item reveal">
+          <div class="timeline-marker" aria-hidden="true">06</div>
+          <div class="timeline-card">
+            <span class="chapter">01 de agosto de 2026 · um novo sim</span>
+            <span class="timeline-icon" aria-hidden="true">♡</span>
+            <h3>O nosso recomeço,<br />do nosso jeito</h3>
+            <p>Preparei um novo pedido de namoro, querendo fazer daquele momento o melhor que eu pudesse. E voltamos a escolher o nosso namoro. Foi de uma maneira diferente: eu achei que poderia ter sido melhor, mas sou feliz por você ter amado o momento do jeito que aconteceu. Sou muito feliz por ter voltado para você e, mais ainda, por você ter me escolhido novamente, meu amor.</p>
+            <a class="timeline-video-link" href="#video-pedido">Rever o nosso pedido em vídeo <span aria-hidden="true">↓</span></a>
+          </div>
+        </article>
+      </div>
+      <div class="proposal-memory reveal" id="video-pedido">
+        <div class="proposal-memory-copy">
+          <p class="section-kicker">01 de agosto de 2026 · para sempre na memória</p>
+          <h3>O nosso pedido,<br /><em>guardado em vídeo.</em></h3>
+          <p>Esse é um daqueles momentos que eu quero poder rever com você, quantas vezes a gente quiser. O nosso novo sim, bem aqui.</p>
+          <span aria-hidden="true">G + B ♡</span>
+        </div>
+        <div class="proposal-video-frame">
+          <video controls playsinline preload="metadata" poster="imagens/WhatsApp Image 2026-11-09 at 17.04.23 (3).jpeg" aria-label="Vídeo do pedido de namoro de Gabriel para Beatriz">
+            <source src="imagens/WhatsApp Video 2026-11-09 at 17.07.59.mp4" type="video/mp4" />
+            Seu navegador não consegue reproduzir este vídeo. <a href="imagens/WhatsApp Video 2026-11-09 at 17.07.59.mp4">Abrir o vídeo</a>.
+          </video>
+          <p>Um dia para lembrar sempre ♡</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="quote-section" aria-label="Uma lembrança para guardar">
+      <div class="quote-art" aria-hidden="true"><span>✦</span><span>✳</span><span>✦</span></div>
+      <blockquote class="reveal">“Mesmo entre erros e acertos, havia carinho. E ainda havia uma história para nós.”
+      </blockquote>
+      <div class="quote-sign reveal">Gabriel, para Beatriz <span>♡</span></div>
+    </section>
+
+    <section class="music-section section-pad" id="musica" aria-labelledby="music-title">
+      <div class="music-inner">
+        <div class="music-copy reveal">
+          <p class="section-kicker">Nossa trilha sonora</p>
+          <h2 id="music-title">Se a nossa história<br />tivesse um <em>disco...</em></h2>
+          <p>Eu guardaria “Eles Se Amam”, do Vocal Livre, para lembrar de nós dois. Tem músicas que fazem a gente pensar em alguém na mesma hora.</p>
+          <div class="music-track">
+            <span class="music-side">Lado A · a nossa música</span>
+            <strong>Eles Se Amam</strong>
+            <span>Vocal Livre</span>
+            <a href="https://www.youtube.com/watch?v=SxJGXR9cHgs" target="_blank" rel="noopener noreferrer">Ouvir nossa música <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="music-bside">
+            <span class="music-side">Lado B · uma lembrança divertida</span>
+            <p>E tem “Mina do Condomínio”, do Seu Jorge. Afinal, quem diria que aquela menina linda também era minha vizinha? Kkkkk.</p>
+            <a href="https://www.youtube.com/watch?v=2GsBx_SmjOI" target="_blank" rel="noopener noreferrer">Ouvir Seu Jorge <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+        <div class="record-stage reveal">
+          <button class="vinyl-button" id="vinyl-toggle" type="button" aria-label="Girar o disco de vinil" aria-pressed="false">
+            <span class="vinyl-disc">
+              <span class="vinyl-label"><img src="imagens/maxresdefault.jpg" alt="" loading="lazy" /></span>
+              <span class="vinyl-hole" aria-hidden="true"></span>
+            </span>
+          </button>
+          <p id="vinyl-hint">Toque no disco para girar ♡</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="reasons-section section-pad" id="motivos" aria-labelledby="reasons-title">
+      <div class="section-heading reveal">
+        <p class="section-kicker">Pequenos grandes motivos</p>
+        <h2 id="reasons-title">O que eu amo <em>em nós</em></h2>
+        <p>Nas pequenas coisas e nos momentos intensos, existe tanto de nós.</p>
+      </div>
+      <div class="reasons-grid">
+        <article class="reason-card reveal"><span class="reason-number">01 /</span><span class="reason-icon"
+            aria-hidden="true">☼</span>
+          <h3>O nosso carinho</h3>
+          <p>O cuidado e o dengo que fazem a gente se sentir perto.</p>
+        </article>
+        <article class="reason-card reveal"><span class="reason-number">02 /</span><span class="reason-icon"
+            aria-hidden="true">✧</span>
+          <h3>A nossa união</h3>
+          <p>O jeito como atravessamos erros e acertos e seguimos aprendendo juntos.</p>
+        </article>
+        <article class="reason-card reveal"><span class="reason-number">03 /</span><span class="reason-icon"
+            aria-hidden="true">♡</span>
+          <h3>A paixão adoidada</h3>
+          <p>A atração, o amor e essa vontade tão nossa de estar um com o outro.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="palmeiras-section section-pad" id="nosso-sonho" aria-labelledby="palmeiras-title">
+      <div class="palmeiras-orbit" aria-hidden="true"></div>
+      <div class="palmeiras-content reveal">
+        <div class="palmeiras-badge">✳ &nbsp; nosso lado palmeirense &nbsp; ✳</div>
+        <p class="section-kicker">Entre o verde e o amor</p>
+        <h2 id="palmeiras-title">Tem um sonho<br />bem <em>verdão</em> aqui...</h2>
+        <p>Ser palmeirense já é uma coisa que a gente divide. Imagina viver um dia desses juntos no estádio?</p>
+        <div class="stadium-photos" aria-label="Imagens do estádio do Palmeiras">
+          <figure class="stadium-photo">
+            <img src="imagens/allianzparque_3RE0H5.jpg" alt="Vista aérea externa do estádio do Palmeiras"
+              loading="lazy" />
+            <figcaption>O estádio por fora</figcaption>
+          </figure>
+          <figure class="stadium-photo">
+            <img src="imagens/allianz_jogo.webp" alt="Torcida acompanhando um jogo no estádio do Palmeiras"
+              loading="lazy" />
+            <figcaption>A emoção lá dentro</figcaption>
+          </figure>
+        </div>
+        <button class="button button-stadium" id="dream-toggle" type="button" aria-expanded="false"
+          aria-controls="dream-reveal">Descobrir meu sonho <span aria-hidden="true">✦</span></button>
+        <div class="dream-reveal" id="dream-reveal" hidden>
+          <div class="dream-ticket">
+            <span class="ticket-top">um sonho do Gabriel · para a Beatriz</span>
+            <span class="ticket-heart" aria-hidden="true">♡</span>
+            <p>É uma coisa boba minha, eu sei... mas quero muito <strong>conhecer o Nubank Parque ao seu lado</strong>,
+              ver nosso timão do coração em campo e vibrar junto com você. E prometo comprar umas comidinhas para você
+              durante o jogo. Kkkkk. 💚</p>
+            <span class="ticket-bottom">um dia desses, nós dois lá · G + B</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="letter-section section-pad" id="carta" aria-labelledby="letter-title">
+      <div class="letter-decoration letter-decoration-left" aria-hidden="true">✳</div>
+      <div class="letter-decoration letter-decoration-right" aria-hidden="true">✧</div>
+      <div class="letter-content reveal">
+        <p class="section-kicker">Só mais uma coisa</p>
+        <h2 id="letter-title">Guardei algumas palavras<br /><em>para você.</em></h2>
+        <p>Depois de todos os caminhos que percorremos, ainda tenho muito para dizer a você.</p>
+        <button class="button button-light" id="open-letter" type="button">Abrir minha carta <span
+            aria-hidden="true">♡</span></button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><span>de Gabriel para Beatriz ♡</span><a href="#inicio">voltar ao começo ↑</a></footer>
+
+  <div class="modal" id="letter-modal" hidden>
+    <div class="modal-backdrop" data-close-letter></div>
+    <section class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="modal-title" tabindex="-1">
+      <button class="modal-close" id="close-letter" type="button" aria-label="Fechar carta">×</button>
+      <span class="letter-stamp" aria-hidden="true">♡</span>
+      <p class="section-kicker">Uma carta para você</p>
+      <h2 id="modal-title">Beatriz,</h2>
+      <p>Quando a gente se conheceu, em novembro de 2022, eu não sabia aonde tudo aquilo nos levaria. Foi acontecendo
+        naturalmente, até o nosso primeiro beijo, em 28 de janeiro de 2023. Desde então, vivemos tanta coisa: tantos
+        acertos, tantas coisinhas lindas.</p>
+      <p>Em 4 de maio de 2024, veio o nosso namoro de fato, depois de tanta enrolação. Depois, passamos por erros e acertos e
+        ficamos um tempo longe um do outro. Não quero apagar essa parte: ela também nos trouxe até aqui.</p>
+      <p>Quando voltamos a conversar, em junho de 2026, ganhamos a chance de escrever um novo capítulo. Por isso quis
+        preparar, em 1º de agosto de 2026, um pedido de namoro que mostrasse o quanto esse recomeço era importante para mim, meu
+        bem.</p>
+      <p>Gosto do nosso carinho, do dengo, da união e dessa paixão adoidada que existe entre nós. Quero continuar
+        cuidando da nossa história com você, um dia de cada vez, e cultivando cada vez mais o nosso amor.</p>
+      <p class="letter-signature">Com amor, Gabriel <span>♡</span></p>
+    </section>
+  </div>
+  <div class="photo-modal" id="photo-modal" hidden>
+    <div class="photo-modal-backdrop" data-close-photo></div>
+    <div class="photo-modal-content" role="dialog" aria-modal="true" aria-label="Foto ampliada" tabindex="-1">
+      <button class="photo-modal-close" id="photo-modal-close" type="button" aria-label="Fechar foto">×</button>
+      <img id="photo-modal-image" src="" alt="" />
+      <p id="photo-modal-caption"></p>
+    </div>
+  </div>
+</body>
+
+</html>
